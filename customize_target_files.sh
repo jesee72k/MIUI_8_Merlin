@@ -15,3 +15,7 @@ cp -f other/merlin.xml out/target_files/SYSTEM/etc/device_features
 cp -f metadata/updater out/target_files/OTA/bin/
 
 cp -f stockrom/boot.img out/target_files/BOOTABLE_IMAGES/
+
+#Added multi cust variants for miui
+rm -rf out/target_files/DATA/miui/cust
+cp -rf other/cust out/target_files/DATA/miui
