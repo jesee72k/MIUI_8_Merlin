@@ -13,3 +13,5 @@ rm -rf out/target_files/SYSTEM/vendor/preinstall
 cp -f other/merlin.xml out/target_files/SYSTEM/etc/device_features
 
 cp -f metadata/updater out/target_files/OTA/bin/
+
+cp -f stockrom/boot.img out/target_files/BOOTABLE_IMAGES/
