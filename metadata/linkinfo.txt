@@ -251,3 +251,5 @@ system/xbin/ls|/system/bin/toybox
 system/xbin/ps|/system/bin/toybox
 system/xbin/unpigz|pigz
 system/xbin/zcat|pigz
+system/media/audio/notifications/MessageComplete.ogg|../ui/MessageComplete.ogg
+system/media/audio/notifications/MessageIncoming.ogg|../ui/MessageIncoming.ogg
