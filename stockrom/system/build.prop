@@ -203,6 +203,4 @@ net.bt.name=Android
 dalvik.vm.stack-trace-file=/data/anr/traces.txt
 ro.expect.recovery_id=0xa780fa0edd86836391b9fdc9843b3a0071a55af1000000000000000000000000
 ro.build.fingerprint=motorola/cm_merlin/merlin:6.0.1/M4B30X/ea25ac4034:userdebug/test-keys
-ro.product.device=merlin
-ro.build.fingerprint=motorola/cm_merlin/merlin:6.0.1/M4B30X/ea25ac4034:userdebug/test-keys
-ro.product.device=merlin
+persist.sys.usb.config=mtp
