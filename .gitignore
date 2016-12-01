@@ -1,0 +1,7 @@
+.delete-zip-file-when-clean
+stockrom.zip
+sh.sh
+out/*
+security/*
+temp/*
+*~
