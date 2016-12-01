@@ -106,8 +106,8 @@ system/app/Profiles 0 0 755 selabel=u:object_r:system_file:s0 capabilities=0x0
 system/app/Profiles/Profiles.apk 0 0 644 selabel=u:object_r:system_file:s0 capabilities=0x0
 system/app/Provision 0 0 755 selabel=u:object_r:system_file:s0 capabilities=0x0
 system/app/Provision/Provision.apk 0 0 644 selabel=u:object_r:system_file:s0 capabilities=0x0
-system/app/Snap 0 0 755 selabel=u:object_r:system_file:s0 capabilities=0x0
-system/app/Snap/Snap.apk 0 0 644 selabel=u:object_r:system_file:s0 capabilities=0x0
+system/priv-app/Snap 0 0 755 selabel=u:object_r:system_file:s0 capabilities=0x0
+system/priv-app/Snap/Snap.apk 0 0 644 selabel=u:object_r:system_file:s0 capabilities=0x0
 system/app/SoundRecorder 0 0 755 selabel=u:object_r:system_file:s0 capabilities=0x0
 system/app/SoundRecorder/SoundRecorder.apk 0 0 644 selabel=u:object_r:system_file:s0 capabilities=0x0
 system/app/Stk 0 0 755 selabel=u:object_r:system_file:s0 capabilities=0x0
