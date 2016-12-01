@@ -1,8 +1,8 @@
 getprop("ro.product.device") == "merlin" || abort("This package is for \"merlin\" devices; this is a \"" + getprop("ro.product.device") + "\".");
-mount("f2fs", "EMMC", "/dev/block/platform/soc.0/by-name/userdata", "/data", "");
+mount("f2fs", "EMMC", "/dev/block/bootdevice/by-name/userdata", "/data", "");
 ui_print("Target: motorola/cm_merlin/merlin:6.0.1/M4B30X/ea25ac4034:userdebug/test-keys");
 show_progress(0.750000, 0);
-mount("ext4", "EMMC", "/dev/block/platform/soc.0/by-name/system", "/system", "");
+mount("ext4", "EMMC", "/dev/block/bootdevice/by-name/system", "/system", "");
 package_extract_file("META-INF/com/miui/busybox", "/tmp/busybox");
 set_metadata("/tmp/busybox", "uid", 0, "gid", 0, "mode", 0555);
 run_program("/tmp/busybox", "rm", "-rf", "/system");
@@ -242,7 +242,7 @@ set_metadata("/system/xbin/perfprofd", "uid", 0, "gid", 2000, "mode", 0755, "cap
 set_metadata("/system/xbin/procmem", "uid", 0, "gid", 0, "mode", 06755, "capabilities", "0x0", "selabel", "u:object_r:system_file:s0");
 set_metadata("/system/xbin/procrank", "uid", 0, "gid", 0, "mode", 06755, "capabilities", "0x0", "selabel", "u:object_r:procrank_exec:s0");
 show_progress(0.050000, 5);
-package_extract_file("boot.img", "/dev/block/platform/soc.0/by-name/boot");
+package_extract_file("boot.img", "/dev/block/bootdevice/by-name/boot");
 show_progress(0.200000, 10);
 package_extract_dir("data", "/data") || abort("Failed to extract dir from \"data\" to \"/data\".");
 package_extract_file("META-INF/com/miui/replace_key", "/tmp/replace_key");
